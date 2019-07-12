@@ -30,12 +30,12 @@ const same = (arr1, arr2) => {
             compareSet[power]--
         }
 
-        if (compareSet[power] == 0) {
+        if (compareSet[power] === 0) {
             delete compareSet[power]
         }
     })
 
-    return Object.keys(compareSet).length == 0
+    return Object.keys(compareSet).length === 0
 }
 
 console.log(same([1,2,3], [4,1,9]))  // true
