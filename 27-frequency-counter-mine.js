@@ -28,8 +28,6 @@ const same = (arr1, arr2) => {
         power = Math.pow(v, 2)
         if (compareSet[power] > 0) {
             compareSet[power]--
-        } else {
-            return false
         }
 
         if (compareSet[power] == 0) {
